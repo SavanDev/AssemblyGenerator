@@ -11,6 +11,11 @@ namespace GitHub
 	{
 		public string login;
 	}
+	
+	public class License
+	{
+		public string name;
+	}
 
 	public class Root
 	{
@@ -18,5 +23,6 @@ namespace GitHub
 		public string description;
 		public Owner owner;
 		public DateTime created_at;
+		public License license;
 	}
 }
