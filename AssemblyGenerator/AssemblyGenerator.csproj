@@ -84,7 +84,7 @@
   <ItemGroup>
 	<PackageReference Include="ILMerge" Version="3.0.41" />
   </ItemGroup>
-  <Target Name="ILMerge">
+  <Target Name="AfterBuild">
 	<Exec Command="$(ILMergeConsolePath) bin\Release\AssemblyGenerator.exe /lib:bin\Release /out:AssemblyGenerator.exe Newtonsoft.Json.dll /target:exe" />
   </Target>
 </Project>
